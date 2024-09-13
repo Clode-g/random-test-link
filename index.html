@@ -1,0 +1,23 @@
+<html>
+<head>
+   <script type="text/javascript">
+      function assignRandomLink() {
+         // Array con i link ai tre test
+         var links = [
+            "https://docs.google.com/forms/d/e/1FAIpQLSfqUATdE2a6XsVnw27fZQYAP-E4Q0GjbAr2itUglzqei23ygA/viewform",
+            "https://docs.google.com/forms/d/e/1FAIpQLSfdA3Lg_OHJswLmiFStrqng1RtcYPqo-PkHMbaL1IdP5CU12A/viewform",
+            "https://docs.google.com/forms/d/e/1FAIpQLSfGJLLAw4fZiHu1MSyK39ru2w2-J3VwM3rDpXKmMEvIbsbBAQ/viewform"
+         ];
+
+         // Genera un numero casuale tra 0 e 2
+         var randomIndex = Math.floor(Math.random() * links.length);
+
+         // Reindirizza al link corrispondente
+         window.location.href = links[randomIndex];
+      }
+   </script>
+</head>
+<body onload="assignRandomLink()">
+   <h1>Stiamo caricando il test per te...</h1>
+</body>
+</html>
